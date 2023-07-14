@@ -1,12 +1,16 @@
 // Import core libraries
+import 'react-native-gesture-handler'
 import React, {FC} from 'react'
-import {SafeAreaView, Text} from 'react-native'
+import {NavigationContainer} from '@react-navigation/native'
+
+// Import navigation
+import {StackNavigation} from './src/navigation'
 
 const App: FC = () => {
   return (
-    <SafeAreaView>
-      <Text>Hello!</Text>
-    </SafeAreaView>
+    <NavigationContainer>
+      <StackNavigation />
+    </NavigationContainer>
   )
 }
 
